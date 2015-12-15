@@ -6,11 +6,25 @@ section#welcome
 			adipisci nam at animi cum officiis tempore iste, ut rem? Incidunt 
 			neque, explicabo!
 
-	br
-	br
+		br
+		br
 
-	= form_for @candidate do |f|
-		div.field
-			= f.label :name
-			br
-			= f. 
+		.col-md-6.col-md-offset-3
+			= form_for :candidates_create do |f|
+				div.field.form-group.input-group
+					span.input-group-addon Nome
+					= f.text_field :name, class: "form-control"
+				div.field.form-group.input-group
+					span.input-group-addon E-mail
+					= f.email_field :email, 'class' => 'form-control'
+				div.field.form-group.input-group
+					span.input-group-addon Telefone
+					= f.text_field :telephone, 'class' => 'form-control'
+				div.field.form-group
+					= f.label :semester
+					= f.select :semester, (1..14).to_a, {}, 
+						{:class => "form-control"}
+				br
+				div.form-group
+					= f.submit 'Inscreve-se', 
+						:class => 'btn btn-default center-block'

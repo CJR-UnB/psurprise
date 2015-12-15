@@ -5,4 +5,11 @@ class CandidatesController < ApplicationController
 		@candidate = Candidate.new
 	end
 
+	def create
+		@candidate = Candidate.new(candidate_params)
+
+		respond_to do |format|
+			
+	end
+
 end
