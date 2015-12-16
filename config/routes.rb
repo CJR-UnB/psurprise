@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
-  get 'candidates/new' => 'candidates#new'
+  root 'candidates#new'
+  get 'candidates/new', to: 'candidates#new', as: :new_candidate
   post 'candidates/create' => 'candidates#create' 
 
   # The priority is based upon order of creation: first created -> highest priority.

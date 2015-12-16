@@ -1,4 +1,17 @@
 section#welcome
+
+	- if notice
+		.container.alert-box
+			.alert.alert-success
+				strong = notice
+
+	- if alert
+		.container.alert-box
+			.alert.alert-danger
+				strong = alert
+				
+
+
 	.container#welcome-box
 		h1.text-center#welcome-title Surpresa!
 		p#welcome-text Lorem ipsum dolor sit amet, consectetur adipisicing elit.

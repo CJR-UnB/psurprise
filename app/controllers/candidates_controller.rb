@@ -9,9 +9,9 @@ class CandidatesController < ApplicationController
 		@candidate = Candidate.new(candidate_params)
 
 		if @candidate.save(candidate_params)
-			redirect_to canditates_new_path, notice: 'Parabéns! Você está inscrito!'
+			redirect_to :new_candidate, notice: 'Parabéns! Você está inscrito!'
 		else
-			render :new, notice: 'Preencha todos os campos corretamente'
+			redirect_to :new_candidate, alert: 'Preencha todos os campos corretamente'
 		end
 	end
 
