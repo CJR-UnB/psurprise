@@ -8,8 +8,16 @@ class CandidatesController < ApplicationController
 	def create
 		@candidate = Candidate.new(candidate_params)
 
-		respond_to do |format|
-			
+		if @candidate.save(candidate_params)
+			redirect_to canditates_new_path, notice: 'Parabéns! Você está inscrito!'
+		else
+			render :new, notice: 'Preencha todos os campos corretamente'
+		end
+	end
+
+	private
+	def candidate_params
+		params.require(:candidate).permit(:name, :email, :telephone, :semester)
 	end
 
 end

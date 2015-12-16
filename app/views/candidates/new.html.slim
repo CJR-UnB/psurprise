@@ -10,7 +10,7 @@ section#welcome
 		br
 
 		.col-md-6.col-md-offset-3
-			= form_for :candidates_create do |f|
+			= form_for @candidate, url: {action: "create"} do |f|
 				div.field.form-group.input-group
 					span.input-group-addon Nome
 					= f.text_field :name, class: "form-control"
