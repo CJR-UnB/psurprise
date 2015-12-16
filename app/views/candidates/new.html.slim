@@ -14,10 +14,8 @@ section#welcome
 
 	.container#welcome-box
 		h1.text-center#welcome-title Surpresa!
-		p#welcome-text Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			Porro corporis officia sint repellendus! Sapiente dolor, ipsam nisi 
-			adipisci nam at animi cum officiis tempore iste, ut rem? Incidunt 
-			neque, explicabo!
+		p.welcome-text É isso galera! A CJR preparou um processo seletivo relâmpago! Nesse final de ano estamos procurando pessoas interessadas em aumentar seus conhecimentos em TI através de experiências empreededoras. Nosso Processo Trainee acontecerá com um modelo diferenciado do comum, contanto não com aulas confencionas, mas sim alunos de Ciência da Computação ou Licenciatura interessados em aumentar suas habilidades através de Mentoring e Coaching.
+		strong.welcome-text Se você é capaz desse novo desafio, inscrava-se!
 
 		br
 		br
@@ -34,7 +32,7 @@ section#welcome
 					span.input-group-addon Telefone
 					= f.text_field :telephone, 'class' => 'form-control'
 				div.field.form-group
-					= f.label :semester
+					= f.label :semester, 'Semestre'
 					= f.select :semester, (1..14).to_a, {}, 
 						{:class => "form-control"}
 				br
