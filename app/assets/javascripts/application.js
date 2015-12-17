@@ -14,4 +14,6 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
+// Vendor Files
+//= require mask.min
 //= require_tree .
