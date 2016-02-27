@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   
+  devise_for :members, controllers: {
+    sessions: 'members/sessions',
+    registrations: 'members/registrations',
+    passwords: 'members/passwords'
+  }
   root 'candidates#new'
   get 'candidates/new', to: 'candidates#new', as: :new_candidate
   post 'candidates/create' => 'candidates#create'

@@ -45,6 +45,9 @@ gem 'high_voltage', '~> 2.4'
 # file attachment
 gem "paperclip", "~> 4.3"
 
+# ultra autentication
+gem 'devise', '~> 3.5', '>= 3.5.6'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a 
   # debugger console
