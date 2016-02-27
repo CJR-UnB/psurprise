@@ -1,0 +1,24 @@
+section.container
+	
+	div.table-responsive
+		table.table
+			thead
+				th Nome
+				th Email
+				th Telefone
+				th Curso
+				th Semestre
+				th Currículo
+				th Aprovado?
+
+			tbody
+				- @candidates.each do |candidate|
+					tr
+						td = candidate.name
+						td = candidate.email
+						td = candidate.telephone
+						td = candidate.course
+						td = candidate.semester
+						td = link_to "Download", candidate.curriculum.url(:original, false)
+						td = candidate.approved	
+				end

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'candidates#new'
   get 'candidates/new', to: 'candidates#new', as: :new_candidate
   post 'candidates/create' => 'candidates#create'
+  get 'candidates/' => 'candidates#index'
   get 'candidates/about' => 'high_voltage/pages#show', id: 'about'
 
   # The priority is based upon order of creation: first created -> highest priority.

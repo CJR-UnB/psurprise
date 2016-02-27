@@ -42,6 +42,9 @@ gem 'slim', '~> 3.0', '>= 3.0.6'
 # high voltage for static pages
 gem 'high_voltage', '~> 2.4'
 
+# file attachment
+gem "paperclip", "~> 4.3"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a 
   # debugger console

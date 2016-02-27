@@ -5,6 +5,10 @@ class CandidatesController < ApplicationController
 		@candidate = Candidate.new
 	end
 
+	def index
+		@candidates = Candidate.all	
+	end
+
 	def create
 		@candidate = Candidate.new(candidate_params)
 
@@ -15,9 +19,10 @@ class CandidatesController < ApplicationController
 		end
 	end
 
+
 	private
 	def candidate_params
-		params.require(:candidate).permit(:name, :email, :telephone, :semester, :course)
+		params.require(:candidate).permit(:name, :email, :telephone, :semester, :course, :curriculum)
 	end
 
 end

@@ -8,4 +8,4 @@
 + disponibilizar download de modelo de curriculo
 + disponilizar upload de curriculo na inscrição
 + atualizar quem pode participar
-+ enviar um email de confirmação 
++ enviar um email de confirmação
