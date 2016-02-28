@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
   
+  root 'candidates#new'
+
   devise_for :members, controllers: {
     sessions: 'members/sessions',
     registrations: 'members/registrations',
-    passwords: 'members/passwords'
+    passwords: 'members/passwords',
   }
-  root 'candidates#new'
+  
+  devise_scope :member do
+    get "/members", to: "members/sessions#new"
+  end
+
+  get 'dashboard' => 'static_pages#dashboard'
+
   get 'candidates/new', to: 'candidates#new', as: :new_candidate
   post 'candidates/create' => 'candidates#create'
   get 'candidates/' => 'candidates#index'
