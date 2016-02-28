@@ -1,0 +1,33 @@
+section.ps__section
+
+  .container
+
+    .ps__container.ps__center
+
+      h2.ps__title Welcome
+
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+
+        div.form-group
+          = f.label :email
+          br
+          = f.email_field :email, autofocus: true, class: "form-control"
+
+        div.form-group
+          = f.label :password
+          br
+          = f.password_field :password, autocomplete: "off", class: "form-control"
+
+        - if devise_mapping.rememberable?
+          div.ps__form-group
+            = f.check_box :remember_me, class: 'ps__checkbox'
+            = f.label :remember_me
+
+        br
+
+        div.actions
+          = f.submit "Log in", class: "btn btn-primary"
+
+        br
+
+        = link_to "Forgot your password?", new_password_path(resource_name), class: "btn btn-default"

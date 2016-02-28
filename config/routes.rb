@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     get "/members", to: "members/sessions#new"
   end
 
-  get 'dashboard' => 'static_pages#dashboard'
+  get 'dashboard' => 'static_pages#dashboard', as: :dashboard
 
   get 'candidates/new', to: 'candidates#new', as: :new_candidate
   post 'candidates/create' => 'candidates#create'

@@ -1,0 +1,22 @@
+.ps__section {
+	height: 100vh;
+	background-color: #ededed;
+}
+
+.ps__container {
+	max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.ps__title {
+	font-family: "Lobster", cursive;
+	font-size: 75px;
+	color: #86c863
+}
+
+.ps__form-group {
+	.ps__checkbox {
+		margin-right: 10px;
+	}
+}
