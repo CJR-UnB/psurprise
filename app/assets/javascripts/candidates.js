@@ -5,3 +5,7 @@
 $(document).ready(function(){
    $('#candidate_telephone').mask('(99) 9999-9999');
 });
+
+$("#ps__upload_btn").onchange = function () {
+	$("#ps__uploaded_file").value = this.value;
+};

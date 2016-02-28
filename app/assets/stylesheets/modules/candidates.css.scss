@@ -1,0 +1,98 @@
+// Place all the styles related to the candidates controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#welcome {
+	background-color: #eaeaea;
+	height: 100vh;
+	min-height: 900px;
+}
+
+#about {
+	background-color: #eaeaea;
+	height: 100vh;
+	min-height: 900px;
+}
+
+#welcome-box {
+	padding-top: 5vh;
+}
+
+#welcome-title {
+	font-family: "Lobster", cursive;
+	color: #86c863;
+	font-size: 90px;
+}
+
+.welcome-text {
+	margin-top: 15px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #003366;
+	font-size: 20px;
+	line-height: 35px;
+}
+
+.about-text {
+	margin-top: 15px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #003366;
+	font-size: 20px;
+	line-height: 35px;
+}
+
+.about-text::first-letter {
+	font-family: "Lobster", cursive;
+	color: #86c863;
+	font-size: 74px;
+	height: 10px;
+}
+
+strong.welcome-text {
+	font-size: 28px;
+	text-align: center;
+	display: inherit;
+}
+
+.alert-box {
+	position: relative;
+	top: 50px;
+}
+
+.field_with_errors {
+	background-color: red;
+}
+
+.about-btn {
+	background-color: #003366;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 25px auto 0px auto;
+	display: block;
+	border: #959595 0px solid;
+	text-decoration: none;
+	color: #eaeaea;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	width: 175px;
+}
+
+.about-btn:hover {
+	background-color: #e5e5e5;
+	text-decoration: none;
+	color: #003366;
+}
+
+.left-space {
+	margin-left: 10px;
+	position: relative;
+	bottom: 10px;
+}
+	
+.about-title {
+	font-family: "Lobster", cursive;
+	color: #86c863;
+	font-size: 90px;
+	text-align: center;
+	margin-top: 10px;
+}
